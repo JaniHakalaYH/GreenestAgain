@@ -6,9 +6,9 @@ public enum PlantInfo {
     CARNIVORE("proteindrink", 0.2,"carnivore"),
     PALM("tap water", 0.5,"palm");
 
-    public final String nutrition;
-    public final double value;
-    public final String type;
+    final String nutrition;
+    final double value;
+    final String type;
     PlantInfo(String a, double b, String c) {
         nutrition = a;
         value = b;

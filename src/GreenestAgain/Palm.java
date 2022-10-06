@@ -2,7 +2,7 @@ package GreenestAgain;
 
 import javax.swing.*;
 
-public class Palm extends Plant implements PlantInterface{ //Arv och interface
+public class Palm extends Plant { //Arv
 
 
     public Palm(String name, double height) {
@@ -17,6 +17,6 @@ public class Palm extends Plant implements PlantInterface{ //Arv och interface
     }
     @Override
     public void nutritionOutput() {
-        JOptionPane.showMessageDialog(null,"Your "+this.plantInfo.type+" needs "+calculateNutrition()+" litres of "+this.plantInfo.nutrition+" a day");
+        JOptionPane.showMessageDialog(null,"Your "+this.plantInfo.type+" "+this.name+" needs "+calculateNutrition()+" litres of "+this.plantInfo.nutrition+" a day");
     }
 }

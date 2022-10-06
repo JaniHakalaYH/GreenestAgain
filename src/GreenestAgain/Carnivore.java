@@ -2,9 +2,9 @@ package GreenestAgain;
 
 import javax.swing.*;
 
-public class Carnivore extends Plant implements PlantInterface{ //Arv och interface
+public class Carnivore extends Plant { //Arv
 
-    private final double baseNutrition; //används endast i denna och är konstant, därför private final.
+    private final double baseNutrition; //används endast i denna klass och är konstant, därför private final.
 
     public Carnivore(String name, double height) {
         super(name, height);
@@ -19,6 +19,6 @@ public class Carnivore extends Plant implements PlantInterface{ //Arv och interf
 
     @Override
     public void nutritionOutput() {
-        JOptionPane.showMessageDialog(null,"Your "+this.plantInfo.type+" needs "+calculateNutrition()+" litres of "+this.plantInfo.nutrition+" a day");
+        JOptionPane.showMessageDialog(null,"Your "+this.plantInfo.type+" "+this.name+" needs "+calculateNutrition()+" litres of "+this.plantInfo.nutrition+" a day");
     }
 }

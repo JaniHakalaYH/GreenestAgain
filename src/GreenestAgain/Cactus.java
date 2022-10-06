@@ -2,7 +2,7 @@ package GreenestAgain;
 
 import javax.swing.*;
 
-public class Cactus extends Plant implements PlantInterface{ //Arv och interface
+public class Cactus extends Plant { //Arv
 
 
     public Cactus(String name, double height) {
@@ -17,6 +17,6 @@ public class Cactus extends Plant implements PlantInterface{ //Arv och interface
 
     @Override
     public void nutritionOutput() {
-        JOptionPane.showMessageDialog(null,"Your "+this.plantInfo.type+" needs "+calculateNutrition()+" litres of "+this.plantInfo.nutrition+" a day");
+        JOptionPane.showMessageDialog(null,"Your "+this.plantInfo.type+" "+this.name+" needs "+calculateNutrition()+" litres of "+this.plantInfo.nutrition+" a day");
     }
 }
